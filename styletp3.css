@@ -1,0 +1,118 @@
+
+
+body { background-color: #FF00AA;
+ 
+}
+
+  header { background-color: #FF6FB3;
+ position: relative; 
+  width: 100%;
+  bottom:50px; /* Ocupa toda la altura de la ventana */
+}
+/*titulo header*/
+     h1 {color: #FFE3E3; font-size: 80px; } 
+
+
+article { background-color: #FFA5CA ; border-radius: 80px; text-overflow: clip; padding:20px;}
+
+
+
+    section { background-color:#FF6FB3;      }  
+
+footer {  background-color: #E97CB6;
+  position: relative;
+  left: 0;
+height: 120px;
+ }
+
+
+p.fot {font-family: 'Courier New', Courier, monospace; font-style: oblique; color:#680026;  
+text-align: left;  font-weight: bold;} 
+
+
+p {  font-weight: bold; font-family: arial; font-size:20px; text-align: justify; }
+
+.intr{font-weight: bold; font-family: arial; font-size:20px; text-align: center;  }
+
+
+ /*clase seccion 1*/
+  .intro { font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    text-shadow: 1px 1px 1px rgb(1, 1, 1); color: #FFE3E3; font-size: 50px;    }
+
+h2 { text-align: center; color: deeppink; font-family: Calibri; font-size: 40px; font-weight: bold;  }
+
+h3 { text-align: center; color: #A7416B ;    }
+
+.hol{ text-align: center; font-size: 22px;  }
+
+.lili{ color: #890030; font-size: 19px;    } /*links bibliografia*/
+
+
+.nada {color: black;   text-align: left;    }
+.nada2 {color: black; text-align: left;    }
+.nada3 { color: black; text-align: left;   }
+
+ /*resto de listas*/
+ h4{font-size:19px; color: #A50044;  }
+
+li { font-weight: bold; color: #FF007C;  } 
+
+
+ /*clase seccion 4*/
+
+    .luli4 {
+      display: flex;
+      width: 100%;
+      height: 100vh;
+    }
+
+    .textosec4{
+      width: 60%;
+      padding: 20px;
+      border: 1px solid #DC74AB;
+      border-radius: 5px;
+      overflow-y: auto;
+      height: 80vh;
+      background-color: white; /* Color de fondo para la sección de texto */
+    }
+
+    .imagesec4 {
+      width: 40%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 80vh;
+    }
+
+    .image-section im{
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+   .t4{
+      text-align: center;
+      color: deeppink;
+      font-weight: bold;
+     
+    }
+
+table {
+  border-collapse: collapse;
+  background-color: rgb(237, 222, 251);
+
+}
+
+td {
+  border: 3px solid #B6074F;
+  color: rgb(78, 58, 95);
+}
+
+th {color: rgb(60, 17, 67);}
+
+.centertabla {
+  display: flex;
+  justify-content: center;
+}
+
+
+
