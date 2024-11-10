@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styleindex.css">
+    <meta charset="utf-8"/>
+    <title>8 de marzo y ESI</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+ <link rel="stylesheet" href="styletp3.css">
+
+      <!-- estilos boostrap-->
+<style>      
+
+/* boton rosa */
+        .btn-rosado {
+            background-color: #ff69b4; /* Color rosado */
+            color: white; /* Color del texto */
+            padding: 10px 20px; /* Tamaño del botón */
+            font-size: 16px; /* Tamaño de la fuente */
+            border-radius: 5px; /* Bordes redondeados */
+            border: none; /* Sin borde */
+        }
+        .btn-rosado:hover {
+            background-color: #ff1493; /* Color al pasar el mouse */
+        } 
+
+ /*direccion boton volver a inicio */      
+  .container-mt-5 {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+        /* navegador */
+        /* Estilo del nav-underline */
+        .nav-underline {
+            background-color:  #FFC9ED; /* Color de fondo rosado pastel */
+            padding: 10px 0; /* Espaciado superior e inferior */
+        }
+
+        /* Estilo de los enlaces del nav */
+        .nav-link {
+            color:  #FF69B4; /* Color de texto rosado oscuro */
+            font-weight: bold; /* Negrita para los enlaces */
+        }
+
+        /* Cambia el color de los enlaces al pasar el mouse */
+        .nav-link:hover {
+            color: #FF1493; /* Color de texto rosado brillante al pasar el mouse */
+        }
+
+        /* Estilo para el enlace activo */
+
+        .nav-link-active 
+        {
+            color:#DE3163; /* Color del texto activo */
+             font-weight: bold;
+            
+}
+
+
+ /* alerta colores nros utiles */
+#liveAlertPlaceholder   {background-color:#FFFFCC ; color:deeppink; }
+
+.btn btn-primary {color:#C2185B;  }
+
+#liveAlertBtn {color: black; background-color:deeppink; border-color:#FF33FF }
+  </style>
+</head>
+
+<body>
+<header>
+
+   <!-- boton vover a inicio -->
+  <center><h1 id="seccion" class="mt-5">Educación Sexual Integral </h1></center>
+  
+  <nav>
+<ul class="nav nav-underline">
+  <li class="nav-item">
+    <a class="nav-link-active" aria-current="page" href="seccion3mjimportantes.html">Mujeres Importantes</a></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="index.html">ESI</a>  
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="seccion2.html">Día de la mujer</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="sec4machis.html">Problemáticas</a>
+  </li>
+<li class="botil">  
+      <!-- ALERTA -->
+<div id="liveAlertPlaceholder"></div>
+<button type="button" class="btn btn-primary" id="liveAlertBtn">Números útiles</button>     </li>
+
+</ul>
+</nav>
+</header>
+
+
+
+   <!-- java de la alerta -->
+<script>
+ // Aquí va tu código JavaScript
+const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+const appendAlert = (message, type) => {
+  const wrapper = document.createElement('div')
+  wrapper.innerHTML = [
+    `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+    `   <div>${message}</div>`,
+    '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+    '</div>'
+  ].join('')
+
+  alertPlaceholder.append(wrapper)
+}
+
+const alertTrigger = document.getElementById('liveAlertBtn')
+if (alertTrigger) {
+  alertTrigger.addEventListener('click', () => {
+    appendAlert('Linea 144 (Violencia contra mujeres),','Linea 102 (asistencia a niños vulnerables),', 'Linea 137 (violaciones a niños, grooming, o explotación sexual)',)
+  })
+}
+        console.log("¡JavaScript está funcionando!");
+ </script>
+
+ <section>
+                    <center><h2 class="intro">Mujeres Importantes</h2></center> 
+<center><p class="intr">En esta sección expondré sobre mujeres importantes que me gustaron </p></center>
+ </section>
+
+<section>
+
+<article>
+<h2>Rosa Park</h2>
+   <center> <img src="park.jpeg" width="700" height="300" > </center>
+
+<p>Rosa Parks es conocida principalmente por su papel en el movimiento por los derechos civiles en Estados Unidos, específicamente por su negativa a ceder su asiento en un autobús a un hombre blanco en Montgomery, Alabama, en 1955.</p>
+<p>Este acto de desobediencia civil desencadenó el boicot de autobuses de Montgomery, un movimiento que duró más de un año y que finalmente llevó a la desegregación de los autobuses en la ciudad.</p>
+<p>Aunque Rosa Parks fue una figura clave en la lucha por la igualdad racial, no se le conoce por un activismo específico por los derechos de las mujeres. Su lucha se centró principalmente en la lucha contra la segregación y la discriminación racial.</p>
+<p>Es importante destacar que la lucha por los derechos civiles y la lucha por los derechos de las mujeres, aunque a veces se perciben como movimientos separados, están profundamente interconectados. La experiencia de las mujeres negras en Estados Unidos, marcada por la discriminación racial y de género, las coloca en una posición única para comprender y luchar contra la opresión en todas sus formas.</p> 
+
+</article>
+
+<article>
+<h2>Maya Angelou</h2>
+   <center> <img src="maya.png" width="700" height="300" > </center>
+
+
+<p>Maya Angelou (1928-2014) fue una autora, poeta y activista estadounidense. Es más conocida por sus obras autobiográficas, especialmente la primera, "Sé por qué canta el pájaro enjaulado" (1969), que exploraba su infancia y adolescencia en el sur de Estados Unidos durante la era de Jim Crow. La escritura de Angelou a menudo trataba temas de racismo, sexismo y resistencia, y se convirtió en una poderosa voz para los derechos civiles y la justicia social. 
+
+<p>Además de su trabajo literario, Angelou fue una ferviente defensora de los derechos de las mujeres. Sus escritos y discursos inspiraron a muchas mujeres a luchar por la igualdad y la autodeterminación. También fue una figura clave en el movimiento feminista de la década de 1960 y 1970, y su trabajo ayudó a dar forma a la conversación sobre el papel de las mujeres en la sociedad.</p>
+
+<p>Recibió numerosos premios por su trabajo, incluida la Medalla Nacional de las Artes y la Medalla Presidencial de la Libertad.</p>
+
+<p></p>        
+</article>
+
+<article>
+<h2>Argentinas que ayudaron al voto femenino</h2>
+   <center> <img src="ensayovotof.jpeg" width="700" height="300" > </center>
+
+
+<p>El 11 de noviembre de 1951 las mujeres argentinas pudieron ejercer por primera vez a nivel nacional su derecho al voto y a ser elegidas representantes. Fue la victoria de una lucha que materializó el gobierno peronista con el protagonismo indiscutido de Eva Perón, pero que el movimiento de mujeres y, especialmente, sufragistas como Julieta Lanteri, Elvira Rawson, Cecilia Grierson y Alicia Moreau, habían iniciado luego de la sanción de la Ley Sáenz Peña (1912) que establecía el voto secreto y obligatorio sólo para los hombres mayores de 18 años.</p>
+
+</article>
+
+<article>
+<h2>Micaela Bastidas (1744-1781) y cómo influyó en la historia de la Independencia</h2>
+   <center> <img src="mia.jpeg" width="700" height="300" > </center>
+
+<p>Micaela fue fundamental para involucrar a cientos de mujeres indígenas en la lucha contra la opresión española. Fue consejera principal de Túpac Amaru, su esposo. Participó en el consejo de los cinco. Proveyó a las tropas, Micaela se encargó de conseguir armas, alimentos, dinero y vestimenta para las tropas rebeldes. Organizó la retaguardia indígena, que se encargaba de implementar medidas de seguridad y luchar contra el espionaje.</P>
+<p>Micaela era una estratega que hacía tareas administrativas, políticas y militares, demostró su capacidad para movilizar y motivar a las comunidades indígenas.</p>      
+</article>
+
+
+</section>
+
+<div class="container-mt-5">
+    <a href="#seccion" class="btn btn-rosado">Volver a inicio</a>
+
+    <div></div> <!-- Espacio para hacer scroll -->
+  
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<footer>
+        <p class="fot">Ornella Barone</p>
+        <p class="fot">Profesora Jacqueline</p>
+        <p class="fot" >Trabajo integrador 3</p>
+    </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
+</body>
+
+
+</html>
