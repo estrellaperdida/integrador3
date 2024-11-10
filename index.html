@@ -1,1 +1,216 @@
-test
+
+ <!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styleindex.css">
+    <meta charset="utf-8"/>
+    <title>8 de marzo y ESI</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+ <link rel="stylesheet" href="styletp3.css">
+      <!-- estilos boostrap-->
+<style>      
+
+/* boton rosa */
+        .btn-rosado {
+            background-color: #ff69b4; /* Color rosado */
+            color: white; /* Color del texto */
+            padding: 10px 20px; /* Tamaño del botón */
+            font-size: 16px; /* Tamaño de la fuente */
+            border-radius: 5px; /* Bordes redondeados */
+            border: none; /* Sin borde */
+        }
+        .btn-rosado:hover {
+            background-color: #ff1493; /* Color al pasar el mouse */
+        } 
+
+     /*direccion boton volver a inicio */      
+  
+      .container-mt-5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+       }
+
+
+        /* navegador */
+        /* Estilo del nav-underline */
+        .nav-underline {
+            background-color:  #FFC9ED; /* Color de fondo rosado pastel */
+            padding: 10px 0; /* Espaciado superior e inferior */
+        }
+
+        /* Estilo de los enlaces del nav */
+        .nav-link {
+            color:  #FF69B4; /* Color de texto rosado oscuro */
+            font-weight: bold; /* Negrita para los enlaces */
+        }
+
+        /* Cambia el color de los enlaces al pasar el mouse */
+        .nav-link:hover {
+            color: #FF1493; /* Color de texto rosado brillante al pasar el mouse */
+        }
+
+        /* Estilo para el enlace activo */
+
+        .nav-link-active 
+        {
+            color:#DE3163; /* Color del texto activo */
+             font-weight: bold; 
+}
+
+
+ /* alerta colores nros utiles */
+#liveAlertPlaceholder   {background-color:#FFFFCC ; color:deeppink; }
+
+.btn btn-primary {color:#C2185B;  }
+
+#liveAlertBtn {color: black; background-color:deeppink; border-color:#FF33FF }
+
+
+    </style>
+</head>
+<body>
+
+<header>
+
+   <!-- boton vover a inicio -->
+  <center><h1 id="seccion" class="mt-5">Educación Sexual Integral </h1></center>
+  
+  <nav>
+<ul class="nav nav-underline">
+  <li class="nav-item">
+    <a class="nav-link-active" aria-current="page" href="index.html">ESI</a></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="seccion2.html">Día de la mujer</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="seccion3mjimportantes.html">Mujeres Importantes</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="sec4machis.html">Problemáticas</a>
+  </li>
+<li class="botil">  
+      <!-- ALERTA -->
+<div id="liveAlertPlaceholder"></div>
+<button type="button" class="btn btn-primary" id="liveAlertBtn">Números útiles</button>     </li>
+
+</ul>
+</nav>
+</header>
+
+
+
+   <!-- java de la alerta -->
+<script>
+ // Aquí va tu código JavaScript
+const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+const appendAlert = (message, type) => {
+  const wrapper = document.createElement('div')
+  wrapper.innerHTML = [
+    `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+    `   <div>${message}</div>`,
+    '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+    '</div>'
+  ].join('')
+
+  alertPlaceholder.append(wrapper)
+}
+
+const alertTrigger = document.getElementById('liveAlertBtn')
+if (alertTrigger) {
+  alertTrigger.addEventListener('click', () => {
+    appendAlert('Linea 144 (Violencia contra mujeres),','Linea 102 (asistencia a niños vulnerables),', 'Linea 137 (violaciones a niños, grooming, o explotación sexual)',)
+  })
+}
+        console.log("¡JavaScript está funcionando!");
+ </script>
+
+
+
+    <section>
+               <center><h2 class="intro">Introducción</h2></center> 
+       <center><p class="intr">En esta página vamos a hablar sobre ESI y el día de la mujer junto con temas relacionados.</p></center>
+        <center> <img src="esilogo.jpeg" width="700" height="300" > </center>
+ 
+    </section>
+<br>
+
+<section>
+
+    <article>
+     <center><h2>¿Qué es la educación sexual integral? (ESI)</h2></center>
+
+<p> La Educación Sexual Integral es un derecho de todos los niños, niñas y adolescentes, por lo que es  vital que las instituciones eduquen en ESI para comprender que la sexualidad es inherente a los seres humanos, es una dimensión en la vida de las personas que se desarrolla desde el nacimiento y no se refiere solo a la genitalidad, sino que se vincula con los sentimientos y la afectividad, la identidad, la forma de relacionarnos con los otros, de experimentar el placer, el ejercicio de derechos sexuales y reproductivos, el cuidado del propio cuerpo y del cuerpo del otro. Educar en ESI implica, además, estimular y fortalecer los valores como la solidaridad, el respeto, la inclusión y la participación ciudadana.</p>
+
+ <h3 class="nada">¿Cuáles son los contenidos de la ESI?</h3>
+ <ol clas="nada2">
+<li class="nada3">Reconocer la perspectiva de género</li>
+<li class="nada3">Respetar la diversidad</li>
+<li class="nada3">Valorar la afectividad</li>
+<li class="nada3">Ejercer los derechos sexuales y reproductivos</li>
+<li class="nada3">Cuidar el cuerpo y la salud</li>
+</ol>
+    </article>
+
+<article>
+<p>Cada vez hay más pruebas de los numerosos beneficios de la educación sexual integral (ESI), que enseña a adolescentes y jóvenes los aspectos cognitivos, emocionales, físicos y sociales de la sexualidad. Sabemos que la ESI no sólo ayuda a reducir el número de embarazos no deseados y de transmisiones del VIH, sino también la violencia de género. Es una forma segura y eficaz de proteger y empoderar a los jóvenes y de avanzar en la igualdad de género.</p>
+
+<p>Sin embargo, no todos los gobiernos están invirtiendo en programas de ESI, lo que deja a muchos adolescentes y jóvenes sin acceso a información que podría salvarles la vida y ayudarles a tomar decisiones saludables sobre su cuerpo, su vida y sus relaciones.</p>
+
+<p>Sin información sobre salud sexual y reproductiva e igualdad de género, los jóvenes se enfrentan a un mayor riesgo de contraer el VIH o de sufrir un embarazo no deseado, lo que no sólo podría limitar sus perspectivas de futuro, sino también poner en peligro sus vidas. Las complicaciones durante el embarazo y el parto son una de las principales causas de muerte entre las adolescentes de todo el mundo.</p>
+
+<p>Resulta preocupante que actualmente nos enfrentemos a una oleada de desinformación sobre la ESI y sus efectos. Esto está provocando que los responsables de la toma de decisiones de todo el mundo retraigan su apoyo a la misma.</p>
+
+<p>Cuando la ESI no está ampliamente al alcance de los jóvenes, se permite que florezcan prácticas y creencias perjudiciales, incluida la discriminación de género. Estas normas discriminatorias también pueden conducir a un aumento de la violencia sexual y de género. Cuando no reciben la ESI, muchos adolescentes pierden también la oportunidad de entrar en la edad adulta con seguridad y confianza.</p>
+
+<p>Pero no tiene por qué ser así. La ESI puede empoderar a los jóvenes y adolescentes para que conozcan sus derechos, tomen decisiones saludables, permanezcan en la escuela y prosperen. Apoya y refuerza los esfuerzos de los padres, las familias, los proveedores de atención sanitaria y los gobiernos para informar y proteger a los jóvenes, y beneficia no sólo a quienes la reciben, sino también a la sociedad en general.</p>
+
+<p>La ESI es una poderosa herramienta que puede cuestionar normas, estereotipos y prácticas de género perjudiciales que obstaculizan la igualdad de género. Puede ayudar a los jóvenes a comprender el amor, el respeto, el consentimiento, el cuidado y la integridad, contribuyendo así a crear familias sanas y sociedades justas. Y lo que es más importante, puede proporcionarles las herramientas que necesitan para identificar el abuso y la coacción, establecer límites y saber cuándo y cómo buscar ayuda. Cuando los jóvenes aprenden sobre las desigualdades de género, la discriminación y la dinámica del poder, tienen cinco veces más probabilidades de actuar de forma que se eviten con éxito los embarazos no deseados, el VIH y las infecciones de transmisión sexual.</p>
+</article>
+
+
+<article>
+    <h3>Bibliografías:</h3>
+    <h4 class="hol">Educación Sexual</h4>
+   <P><a href="https://www.lanacion.com.ar/el-mundo/estas-son-las-29-restricciones-y-maltratos-que-sufren-las-mujeres-bajo-el-regimen-taliban-nid17082021/?gad_source=1&gclid=Cj0KCQjwvpy5BhDTARIsAHSilylRdheRiorRMtJ37xi3InkTuE_LJs32QczwnG-MwLjLjoybkSA0mHsaAv7MEALw_wcB" class="lili" target:"_blank">Fundación Huesped</a></P>
+   <P><a href="https://chequeado.com/el-explicador/que-es-la-educacion-sexual-integral-que-se-ensena-y-que-evidencias-hay-a-favor-de-su-implementacion-en-las-escuelas/" class="lili" target:"_blank">Chequeado</a></P>
+   <P><a href="https://www.cultura.gob.ar/de-que-hablamos-cuando-hablamos-de-educacion-sexual-integral-9651/" class="lili" target:"_blank">Secretaría de Cultura</a></P>
+<P><a href="https://internationalmidwives.org/es/home-espanol/" class="lili" target:"_blank">Internacional Confederation of Midwives  </a></P>
+<P><a href="https://www.conicet.gov.ar/programas/vocar/educacion-sexual-integral-esi/" class="lili" target:"_blank">CONICET</a></P>
+ <h4 class="hol">Mujeres</h4>
+<P><a href="https://www.mpba.gov.ar/denunciasviolencia" class="lili" target:"_blank"> Ministerio Argentino</a></P>
+<P><a href="https://buenosaires.gob.ar/vicejefatura/mujer/linea-144-atencion-victimas-de-violencia-de-genero" class="lili" target:"_blank">Ministerio Público  </a></P>
+<P><a href="https://www.argentina.gob.ar/noticias/8-de-marzo-dia-internacional-de-la-mujer-7" class="lili" target:"_blank">Argentina</a></P>
+<P><a href="https://www.telefonica.com/es/sala-comunicacion/blog/mujeres-importantes-que-cambiaron-la-historia/" class="lili" target:"_blank">Mujeres importantes</a></P>
+<P><a href="https://www.osde.com.ar/salud-y-bienestar/8-de-marzo-8-mujeres-que-dejaron-huella-12767.html" class="lili" target:"_blank">Mujeres Importantes 2</a></P>
+<P><a href="https://mujeresbacanas.com/micaela-bastidas-1744-1781/" class="lili" target:"_blank">Micaela Bastidas</a></P>
+<P><a href="https://www.casamerica.es/sociedad/la-situacion-actual-de-las-mujeres-en-america-latina" class="lili" target:"_blank">Casa América</a></P>
+
+</article>
+
+    </section>
+
+<div class="container-mt-5">
+    <a href="#seccion" class="btn btn-rosado">Volver a inicio</a>
+
+    <div></div> <!-- Espacio para hacer scroll -->
+  
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<footer>
+        <p class="fot">Ornella Barone</p>
+        <p class="fot">Profesora Jacqueline</p>
+        <p class="fot" >Trabajo integrador 3</p>
+    </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
+</body>
+
+
+</html>
